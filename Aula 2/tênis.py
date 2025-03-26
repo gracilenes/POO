@@ -5,10 +5,18 @@ class Tenis:
         self.tamanho = None
         self.cor = None
         self.modalidade = None
-
+    def aumentar_quantidade(self, quantidade):
+        self.quantidade += quantidade
+       
 tenis1 = Tenis()
-tenis1.nome = "Tênis esportivo"
-print(tenis1.nome)
+
+tenis1.quantidade = 5
+print(tenis1.quantidade)
+
+tenis1.aumentar_quantidade(15)
+print(tenis1.quantidade)
+
+
 
 class Livro:
     def __init__(self):
