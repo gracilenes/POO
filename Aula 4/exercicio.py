@@ -13,6 +13,7 @@ class Pessoa:
         return self.__idade
 
     def set_idade(self, idade):
-        if idade >= 0
-        self.__idade = idade
-           
+        if idade >= 0:
+            self.__idade = idade
+        else:
+            print("Idade não pode ser negativa.")
